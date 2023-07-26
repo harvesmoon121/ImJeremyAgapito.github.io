@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14830440e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h4>Jeremy Agapito</h4>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Junior Software Engineer</p>
+                <h1>Hi, I'm <span>Jeremy</span> <br> from Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+<!------------------ABOUT-----------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and talented IT fresh graduate seeking an entry-level position in a reputable organization. Eager to apply technical skills, academic knowledge, and a strong work ethic to contribute to the success of the company while gaining practical experience and professional growth.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('badge')">Badge</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>React Native | Use programming languages such as HTML, CSS, and JavaScript</li>
+                            <li><span>App Development</span><br>React JS | Use programming languages such as Java or Kotlin and Android development tools.</li>
+                            <li><span>Database Administrator</span><br>Firebase(NoSQL Database) and SQL infrastructure | Create and modify database tables, indexes, and relationships to optimize data retrieval and storage.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>January - May 2023</span><br>Web Developer of ONE app at Dr. Yanga's Colleges Inc.</li>
+                            <li><span>January - June 2023</span><br>Database Administrator of ONE app at Dr. Yanga's Colleges Inc.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Information Technology</span><br>Dr. Yanga's Colleges Inc. | 2023<br>College Excellence Award<br>Leadership Award</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="badge">
+                        <ul>
+                            <li><span><i class="fa-brands fa-aws"></i> Academy Graduate | <i class="fa-brands fa-aws"></i> Academy Cloud Foundations</span><br>Issued on October 19, 2022 <br>
+                                Issued by Amazon Web Services Training <br>
+                                and Certification <br>
+                                Issued using Credly <br>
+                                Issued to Jeremy Agapito <br>
+                                Link: https://www.credly.com/go/CcsJvidV</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------------SERVICES-----------------> 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p> Work on various aspects of website development, handling both the visual elements and the technical implementation. General web developers may work on static websites, simple web applications, or collaborate with specialists for more complex projects.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Use programming languages such as Java or Kotlin and Android development tools to create native Android apps. Use cross-platform development frameworks like React Native. Address bug fixes, implement updates, and ensure the app remains compatible with new devices and operating system versions.  </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Admin</h2>
+                <p>Configure database settings, optimize performance parameters, and establish security protocols during the initial setup process. Implement backup strategies and develop recovery plans to restore data in the event of a disaster or system failure. Create and modify database tables, indexes, and relationships to optimize data retrieval and storage.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------PORTFOLIO-----------------> 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Websites</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Applications</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Systems</h3>
+                    <p>Description</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------CONTACT-----------------> 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> agapitojeremy28@gmail.com</p>
+                <p><i class="fa-solid fa-phone-square"></i> +63 9634749525</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jeremy.agapito.9"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jrmy.aga7/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jeremy-agapito-1ba835277/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jeremy Agapito</p>
+    </div>
+</div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQXjp-LytqasrVfS9odocR_6O992EbqjWHjStZydziEG0BJUe0Sop-xfmfs_dYl7Ph/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
